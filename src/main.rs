@@ -12,6 +12,6 @@ fn main()  {
 
 fn add(number:&u8) -> u8 {
     println!("Adding number {:p}",number);
-    return number + 5;
+    number + 5
 }
 

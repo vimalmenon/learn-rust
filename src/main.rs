@@ -2,6 +2,19 @@
 mod first_script;
 use first_script::test;
 
+#[derive(Debug)]
+enum Gender {
+    Male,
+    Female
+}
+
+#[derive(Debug)]
+struct User {
+    name: String,
+    age: u8,
+    gender: Gender
+}
+
 fn main()  {
     // println!("Hello, world!");
     // let another_str = "test";
@@ -12,9 +25,13 @@ fn main()  {
     // println!("{value} {} {} {} {new_string}", string, number, another_str);
 
     // string.push_str("Value");
-    add(5);
+    let mut number:u8 = 5;
+    number = add(number);
     array();
     println!("{:?} this is test", test());
+    println!("{:?}", number);
+    let vimal_menon = User { name: String::from("Vimal Menon"), age: 40, gender: Gender::Male };
+    println!("{:?}", vimal_menon);
 }
 
 fn add(number:u8) -> u8 {
@@ -25,4 +42,4 @@ fn add(number:u8) -> u8 {
 fn array() {
     let numbers: [i32; 3] = [1, 2, 3];
     println!("{:?}", numbers);
-}
+} 

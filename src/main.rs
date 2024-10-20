@@ -1,45 +1,17 @@
-// Import the test function from first_script.rs
-mod first_script;
-use first_script::test;
+fn main() {
+    // Fix in size, so push don't work
+    let a = ["a", "b"];
+    println!("{:?}", a);
 
-#[derive(Debug)]
-enum Gender {
-    Male,
-    Female
+    // Resizable List, this needs to be mutable as it need to increase in size.
+    let mut v1  = Vec::new();
+    v1.push("test1");
+    v1.push("test2");
+    println!("{:?}", v1);
+
+    // List with initial values
+    let mut v2 = vec!["test1", "test2"];
+    v2.push("test3");
+    println!("{:?}", v2);
+
 }
-
-#[derive(Debug)]
-struct User {
-    name: String,
-    age: u8,
-    gender: Gender
-}
-
-fn main()  {
-    // println!("Hello, world!");
-    // let another_str = "test";
-    // let mut string:String = String::from("Vimal Menon");
-    // let new_string: String  = String::new();
-    // let number :u8= 5;
-    // let value: u8 = add(&number);
-    // println!("{value} {} {} {} {new_string}", string, number, another_str);
-
-    // string.push_str("Value");
-    let mut number:u8 = 5;
-    number = add(number);
-    array();
-    println!("{:?} this is test", test());
-    println!("{:?}", number);
-    let vimal_menon = User { name: String::from("Vimal Menon"), age: 40, gender: Gender::Male };
-    println!("{:?}", vimal_menon);
-}
-
-fn add(number:u8) -> u8 {
-    println!("Adding number {}",number);
-    number + 5
-}
-
-fn array() {
-    let numbers: [i32; 3] = [1, 2, 3];
-    println!("{:?}", numbers);
-} 

@@ -19,7 +19,7 @@ fn main() {
 }
 ```
 
-#### Example or simple rust
+#### Example of list / Vector
 ```rs
 fn main() {
     // Fix in size, so push don't work
@@ -36,6 +36,6 @@ fn main() {
     let mut v2 = vec!["test1", "test2"];
     v2.push("test3");
     println!("{:?}", v2);
-
 }
 ```
+

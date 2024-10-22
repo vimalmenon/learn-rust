@@ -58,7 +58,6 @@ fn borrowed(string: &mut String) {
 ##### Example for Loop
 ```rs
 fn main() {
-    
     let mut items = [String::from("One"), String::from("Two"), String::from("Three")];
     simple_loop(&mut items);
     for_loop(&mut items);

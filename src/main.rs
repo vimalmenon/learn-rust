@@ -1,17 +1,12 @@
 fn main() {
-    // Fix in size, so push don't work
-    let a = ["a", "b"];
-    println!("{:?}", a);
+    let mut string = String::from("This is string");
+    println!("This is Before, {}", string);
+    borrowed(&mut string);
+    string.push_str(", This is after borrowed");
+    println!("This is After, {}", string);
+}
 
-    // Resizable List, this needs to be mutable as it need to increase in size.
-    let mut v1  = Vec::new();
-    v1.push("test1");
-    v1.push("test2");
-    println!("{:?}", v1);
-
-    // List with initial values
-    let mut v2 = vec!["test1", "test2"];
-    v2.push("test3");
-    println!("{:?}", v2);
-
+fn borrowed(string: &mut String) {
+    string.push_str(", This is inside borrowed");
+    println!("This is Inside, {}", string);
 }

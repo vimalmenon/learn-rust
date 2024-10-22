@@ -37,6 +37,21 @@ fn main() {
     println!("{:?}", v2);
 }
 ```
+#### Example of Borrowing
+```rs
+fn main() {
+    let mut string = String::from("This is string");
+    println!("This is Before, {}", string);
+    borrowed(&mut string);
+    string.push_str(", This is after borrowed");
+    println!("This is After, {}", string);
+}
+
+fn borrowed(string: &mut String) {
+    string.push_str(", This is inside borrowed");
+    println!("This is Inside, {}", string);
+}
+```
 ##### Example for Loop
 ```rs
 fn main() {
@@ -72,18 +87,35 @@ fn while_loop(items: &mut [String; 3]) {
     }
 }
 ```
-#### Example of Borrowing
+#### Example of String
 ```rs
 fn main() {
-    let mut string = String::from("This is string");
-    println!("This is Before, {}", string);
-    borrowed(&mut string);
-    string.push_str(", This is after borrowed");
-    println!("This is After, {}", string);
+   str_fn();
+   string_fn();
 }
 
-fn borrowed(string: &mut String) {
-    string.push_str(", This is inside borrowed");
-    println!("This is Inside, {}", string);
+fn str_fn() {
+    let test: &str = "Vimal";
+    println!("test : {}", test);
+    let test1 = test.to_string();
+    println!("test1 : {}", test1);
+    let test2 = test;
+    println!("test : {}, test1 : {}, test2 : {}",test, test1, test2);
+    let test3 = test1.clone();
+    println!("test : {}, test1 : {}, test2 : {}, test3 : {}",test, test1, test2, test3);
+}
+
+fn string_fn() {
+    let test = String::from("Vimal");
+    println!("test : {}", test);
+    let test1 = test.clone();
+    println!("test : {}, test1 : {}",test, test1);
+    let test2 = test.to_owned();
+    println!("test : {}, test1 : {}, test2 : {}",test, test1, test2);
+    /* 
+    This will failed because test1 is moved to test2
+    let test3 = test1;
+    println!("test : {}, test1 : {}, test2 : {}, test3 : {}",test, test1, test2, test3);
+    */
 }
 ```

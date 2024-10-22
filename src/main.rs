@@ -1,34 +1,30 @@
 fn main() {
-    
-    let mut items = [String::from("One"), String::from("Two"), String::from("Three")];
-    simple_loop(&mut items);
-    for_loop(&mut items);
-    while_loop(&mut items);
+   str_fn();
+   string_fn();
 }
 
-fn simple_loop(items: &mut [String; 3]) {
-    let mut counter = 0;
-    loop {
-        if counter == items.len() {
-            break;
-        }
-        items[counter].push_str(" - simple loop");
-        println!("Simple Loop : {}", items[counter]);
-        counter += 1;
-    }
-}
-fn for_loop(items: &mut [String; 3]) {
-    for item in items.iter_mut() {
-        item.push_str(" - for loop");
-        println!("For Loop: {}", item);
-    }
+fn str_fn() {
+    let test: &str = "Vimal";
+    println!("test : {}", test);
+    let test1 = test.to_string();
+    println!("test1 : {}", test1);
+    let test2 = test;
+    println!("test : {}, test1 : {}, test2 : {}",test, test1, test2);
+    let test3 = test1.clone();
+    println!("test : {}, test1 : {}, test2 : {}, test3 : {}",test, test1, test2, test3);
 }
 
-fn while_loop(items: &mut [String; 3]) {
-    let mut counter = 0;
-    while counter < items.len() {
-        items[counter].push_str(" - while loop");
-        println!("While Loop: {}", items[counter]);
-        counter += 1;
-    }
+fn string_fn() {
+    let test = String::from("Vimal");
+    println!("test : {}", test);
+    let test1 = test.clone();
+    println!("test : {}, test1 : {}",test, test1);
+    let test2 = test.to_owned();
+    println!("test : {}, test1 : {}, test2 : {}",test, test1, test2);
+    /* 
+    This will failed because test1 is moved to test2
+    let test3 = test1;
+    println!("test : {}, test1 : {}, test2 : {}, test3 : {}",test, test1, test2, test3);
+    */
+
 }

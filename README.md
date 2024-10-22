@@ -10,7 +10,7 @@ cargo run
 cargo run --release
 ```
 
-### Example
+### Examples
 
 #### Simple Program
 ```rs
@@ -18,7 +18,6 @@ fn main() {
     println!("Hello, world!");   
 }
 ```
-
 #### Example of list / Vector
 ```rs
 fn main() {
@@ -36,23 +35,6 @@ fn main() {
     let mut v2 = vec!["test1", "test2"];
     v2.push("test3");
     println!("{:?}", v2);
-}
-```
-
-
-#### Example of Borrowing
-```rs
-fn main() {
-    let mut string = String::from("This is string");
-    println!("This is Before, {}", string);
-    borrowed(&mut string);
-    string.push_str(", This is after borrowed");
-    println!("This is After, {}", string);
-}
-
-fn borrowed(string: &mut String) {
-    string.push_str(", This is inside borrowed");
-    println!("This is Inside, {}", string);
 }
 ```
 ##### Example for Loop
@@ -88,5 +70,20 @@ fn while_loop(items: &mut [String; 3]) {
         println!("While Loop: {}", items[counter]);
         counter += 1;
     }
+}
+```
+#### Example of Borrowing
+```rs
+fn main() {
+    let mut string = String::from("This is string");
+    println!("This is Before, {}", string);
+    borrowed(&mut string);
+    string.push_str(", This is after borrowed");
+    println!("This is After, {}", string);
+}
+
+fn borrowed(string: &mut String) {
+    string.push_str(", This is inside borrowed");
+    println!("This is Inside, {}", string);
 }
 ```

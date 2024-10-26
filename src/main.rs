@@ -1,10 +1,8 @@
+use std::io::stdin;
 
 fn main() {
-    let mut some_value:String = String::from("Vimal Menon");
-    some_fn(&mut some_value);
-    println!("{}", some_value);
-}
-
-fn some_fn(value: &mut String) {
-    value.push_str(" - This is added from some_fn");
+    let mut input = String::new();
+    println!("Please enter a text");
+    stdin().read_line(&mut input).expect("Please enter the correct number");
+    println!("Text you entered is {}", input);
 }

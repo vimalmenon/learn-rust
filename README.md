@@ -113,51 +113,32 @@ fn while_loop(items: &mut [String; 3]) {
 ```
 #### Example of String
 ```rs
+
 fn main() {
-   str_fn();
-   string_fn();
+    let val1 = 5;
+    let val2 = 10;
+    println!("i32 : {}", test_num(val1, val2));
+
+    let bool = false;
+    println!("bool : {}", test_bool(bool));
+
+    let char = 'a';
+    println!("char : {}", test_char(char));
+
+    let str = "Hello, World!";
+    println!("str : {}", test_str(str));
 }
 
-fn str_fn() {
-    let test: &str = "Vimal";
-    println!("test : {}", test);
-    let test1 = test.to_string();
-    println!("test1 : {}", test1);
-    let test2 = test;
-    println!("test : {}, test1 : {}, test2 : {}",test, test1, test2);
-    let test3 = test1.clone();
-    println!("test : {}, test1 : {}, test2 : {}, test3 : {}",test, test1, test2, test3);
+fn test_num(val1: i32, val2: i32)-> i32 {
+    val1 + val2 + 5
 }
-
-fn string_fn() {
-    let test = String::from("Vimal");
-    println!("test : {}", test);
-    let test1 = test.clone();
-    println!("test : {}, test1 : {}",test, test1);
-    let test2 = test.to_owned();
-    println!("test : {}, test1 : {}, test2 : {}",test, test1, test2);
-    /* 
-    This will failed because test1 is moved to test2
-    let test3 = test1;
-    println!("test : {}, test1 : {}, test2 : {}, test3 : {}",test, test1, test2, test3);
-    */
+fn test_bool(val: bool) -> bool {
+    !val
+}
+fn test_char(val: char) -> char {
+    val
+}
+fn test_str(val: &str) -> &str {
+    val
 }
 ```
-```rs
-fn main() {
-    let some_str: &str = "vimal";
-    let another_str = some_str;
-    println!("{}, {}", some_str, another_str);
-    let some_number:u8 = 200;
-    let another_number = some_number;
-    println!("{}, {}", some_number, another_number);
-    let some_bool:  bool = true;
-    let another_bool = some_bool;
-    println!("{}, {}", some_bool, another_bool);
-    // let some_string: String = String::from("Vimal");
-    // let another_string = some_string;
-    // println!("{}, {}", some_string, another_string);
-}
-```
-#### Findings
-- &str, u8 & bool type can be referenced to another variable without any error

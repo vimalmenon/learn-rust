@@ -1,3 +1,5 @@
+mod first_script;
+use first_script::test;
 
 fn main() {
     let mut value = String::from("This is Text, ");
@@ -5,4 +7,5 @@ fn main() {
     println!("Memory : {:p}", &value);
     value.push_str("test");
     println!("Text : {}", value);
+    println!("{}", test());
 }

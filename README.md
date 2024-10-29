@@ -154,3 +154,20 @@ fn main() {
     println!("Text : {}", value);
 }
 ```
+
+
+```rs
+// first_script.rs
+pub fn test() -> u8 {
+    println!("This is a test function");
+    5
+}
+
+//main.rs
+mod first_script;
+use first_script::test;
+
+fn main() {
+    println!("{}", test());
+}
+```

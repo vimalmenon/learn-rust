@@ -154,8 +154,7 @@ fn main() {
     println!("Text : {}", value);
 }
 ```
-
-
+#### Example getting function from another file
 ```rs
 // first_script.rs
 pub fn test() -> u8 {

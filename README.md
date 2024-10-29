@@ -111,6 +111,7 @@ fn while_loop(items: &mut [String; 3]) {
     }
 }
 ```
+
 #### Example of String
 ```rs
 
@@ -140,5 +141,16 @@ fn test_char(val: char) -> char {
 }
 fn test_str(val: &str) -> &str {
     val
+}
+```
+
+#### Example Of Reference
+```rs
+fn main() {
+    let mut value = String::from("This is Text, ");
+    println!("Text : {}", value);
+    println!("Memory : {:p}", &value);
+    value.push_str("test");
+    println!("Text : {}", value);
 }
 ```

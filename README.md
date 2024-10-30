@@ -27,6 +27,8 @@
 - [ ] Async / Await / Futures
 - [ ] Sample code
     - [ ] Reading the file
+    - [ ] Write to file
+    - [ ] Update the file
     - [ ] Traversing the file system
     - [ ] Random Number
     - [ ] DateTime

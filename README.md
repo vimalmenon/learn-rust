@@ -34,6 +34,7 @@
 - [ ] Life Time
 - [ ] Macros
 - [ ] Async / Await / Futures
+- [ ] Sleep 
 - [ ] Traits
     - [ ] Copy, Clone, Debug
     - [ ] Difference between copy and clone

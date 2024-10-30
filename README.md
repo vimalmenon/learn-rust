@@ -49,6 +49,7 @@
 - [ ] Connect to DB
 - [ ] Desktop App
 - [ ] Web Framework
+- [ ] Trading App
 - [ ] BlockChain (Solana)
 
 

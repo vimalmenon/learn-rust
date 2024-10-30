@@ -15,7 +15,7 @@
 - [ ] Enums
 - [ ] Traits
 - [ ] Implementation
-- [ ] Vector, Hashmap
+- [ ] Vector, Hashmap, Arc
 - [ ] Module and Library
 - [ ] Closure / Lambda function 
 - [ ] Error Handling
@@ -29,10 +29,10 @@
     - [ ] Reading the file
     - [ ] Write to file
     - [ ] Update the file
-    - [ ] Traversing the file system
+    - [ ] Traversing the folder
     - [ ] Random Number
     - [ ] DateTime
-    - [ ] Other common Libraries
+    - [ ] Other common libraries
 - [ ] Connect to DB
 - [ ] Desktop App
 - [ ] Web Framework

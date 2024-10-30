@@ -16,6 +16,7 @@
 - [ ] Result
 - [ ] Generics
 - [ ] Life Time
+- [ ] Closure / Lambda function 
 - [ ] Async / Await / Futures
 - [ ] Sample code
     - [ ] Reading the file

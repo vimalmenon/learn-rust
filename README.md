@@ -36,6 +36,7 @@
 - [ ] Macros
 - [ ] Async / Await / Futures
 - [ ] Other Traits (Copy, Clone, Debug)
+    - [ ] Difference between copy and clone
 - [ ] Sample code
     - [ ] Random Number
     - [ ] DateTime

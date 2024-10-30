@@ -1,5 +1,24 @@
 # Learn Rust
 
+- [ ] Basics of Rust
+- [ ] If / else 
+- [ ] Loops
+- [ ] Function
+- [ ] Ownership and Reference
+- [ ] Mutation
+- [ ] Struts
+- [ ] Enums
+- [ ] Vector, Hashmap
+- [ ] Module and Library
+- [ ] Error Handling
+- [ ] Web Framework
+- [ ] Sample code
+    - [ ] Reading the file
+    - [ ] Random Number
+    - [ ] DateTime
+- [ ] BlockChain (Solana)
+
+
 ## Run Rust script
 ```sh
 cargo run

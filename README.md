@@ -42,6 +42,10 @@
     - [ ] Random Number
     - [ ] DateTime
     - [ ] Other common libraries
+- Other Concept
+    - Move
+    - Panic
+    - Anything else
 - [ ] Connect to DB
 - [ ] Desktop App
 - [ ] Web Framework

@@ -13,6 +13,9 @@
 - [ ] Vector, Hashmap
 - [ ] Module and Library
 - [ ] Error Handling
+- [ ] Result
+- [ ] Generics
+- [ ] Life Time
 - [ ] Sample code
     - [ ] Reading the file
     - [ ] Traversing the file system
@@ -21,7 +24,7 @@
     - [ ] Other common Libraries
 - [ ] Web Framework
 - [ ] BlockChain (Solana)
-
+- [ ] Async / Await / Futures
 
 ## Run Rust script
 ```sh

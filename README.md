@@ -7,6 +7,7 @@
     - [ ] Loop through string
     - [ ] Loop through items in loop
 - [ ] String
+    - [ ] Split a string
 - [ ] Functions
 - [ ] Ownership and Reference
 - [ ] Mutation

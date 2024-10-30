@@ -18,6 +18,7 @@
     - [ ] Traversing the file system
     - [ ] Random Number
     - [ ] DateTime
+    - [ ] Other common Libraries
 - [ ] Web Framework
 - [ ] BlockChain (Solana)
 

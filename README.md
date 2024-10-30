@@ -3,6 +3,10 @@
 - [ ] Basics of Rust
 - [ ] If / else 
 - [ ] Loops
+- [ ] Iterator
+    - [ ] Loop through string
+    - [ ] Loop through items in loop
+- [ ] String
 - [ ] Functions
 - [ ] Ownership and Reference
 - [ ] Mutation

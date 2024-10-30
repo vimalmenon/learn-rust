@@ -37,7 +37,6 @@
 - [ ] Async / Await / Futures
 - [ ] Other Traits (Copy, Clone, Debug)
 - [ ] Sample code
-
     - [ ] Random Number
     - [ ] DateTime
     - [ ] Other common libraries

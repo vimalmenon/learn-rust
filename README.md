@@ -43,9 +43,10 @@
     - [ ] DateTime
     - [ ] Other common libraries
 - Other Concept
-    - Move
-    - Panic
-    - Anything else
+    - [ ] Move
+    - [ ] Panic
+    - [ ] Load Env value
+    - [ ] Anything else
 - [ ] Connect to DB
 - [ ] Desktop App
 - [ ] Web Framework

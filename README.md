@@ -8,6 +8,8 @@
 - [ ] Mutation
 - [ ] Struts
 - [ ] Enums
+- [ ] Traits
+- [ ] Implementation
 - [ ] Vector, Hashmap
 - [ ] Module and Library
 - [ ] Error Handling

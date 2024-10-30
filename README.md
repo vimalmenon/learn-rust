@@ -12,11 +12,13 @@
 - [ ] Implementation
 - [ ] Vector, Hashmap
 - [ ] Module and Library
+- [ ] Closure / Lambda function 
 - [ ] Error Handling
 - [ ] Result
+- [ ] Option
 - [ ] Generics
 - [ ] Life Time
-- [ ] Closure / Lambda function 
+- [ ] Macros
 - [ ] Async / Await / Futures
 - [ ] Sample code
     - [ ] Reading the file

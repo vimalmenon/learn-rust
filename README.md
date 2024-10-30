@@ -8,6 +8,16 @@
     - [ ] Loop through items in loop
 - [ ] String
     - [ ] Split a string
+- [ ] Folders / file
+    - [ ] Traversing the folder
+    - [ ] Creating a folder
+    - [ ] Deleting a folder
+    - [ ] Deleting a file
+    - [ ] Updating a file
+    - [ ] Creating file
+    - [ ] Reading the file
+    - [ ] Write to file
+    - [ ] Update the file
 - [ ] Functions
 - [ ] Ownership and Reference
 - [ ] Mutation
@@ -25,11 +35,9 @@
 - [ ] Life Time
 - [ ] Macros
 - [ ] Async / Await / Futures
+- [ ] Other Traits (Copy, Clone, Debug)
 - [ ] Sample code
-    - [ ] Reading the file
-    - [ ] Write to file
-    - [ ] Update the file
-    - [ ] Traversing the folder
+
     - [ ] Random Number
     - [ ] DateTime
     - [ ] Other common libraries

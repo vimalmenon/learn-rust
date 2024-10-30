@@ -3,7 +3,7 @@
 - [ ] Basics of Rust
 - [ ] If / else 
 - [ ] Loops
-- [ ] Function
+- [ ] Functions
 - [ ] Ownership and Reference
 - [ ] Mutation
 - [ ] Struts
@@ -16,6 +16,7 @@
 - [ ] Result
 - [ ] Generics
 - [ ] Life Time
+- [ ] Async / Await / Futures
 - [ ] Sample code
     - [ ] Reading the file
     - [ ] Traversing the file system
@@ -24,7 +25,8 @@
     - [ ] Other common Libraries
 - [ ] Web Framework
 - [ ] BlockChain (Solana)
-- [ ] Async / Await / Futures
+
+
 
 ## Run Rust script
 ```sh

@@ -23,7 +23,6 @@
 - [ ] Mutation
 - [ ] Struts
 - [ ] Enums
-- [ ] Traits
 - [ ] Implementation
 - [ ] Vector, Hashmap, Arc
 - [ ] Module and Library
@@ -35,8 +34,10 @@
 - [ ] Life Time
 - [ ] Macros
 - [ ] Async / Await / Futures
-- [ ] Other Traits (Copy, Clone, Debug)
+- [ ] Traits
+    - [ ] Copy, Clone, Debug
     - [ ] Difference between copy and clone
+    - [ ] Other Traits
 - [ ] Sample code
     - [ ] Random Number
     - [ ] DateTime

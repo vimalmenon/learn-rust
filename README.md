@@ -31,6 +31,8 @@
     - [ ] Random Number
     - [ ] DateTime
     - [ ] Other common Libraries
+- [ ] Connect to DB
+- [ ] Desktop App
 - [ ] Web Framework
 - [ ] BlockChain (Solana)
 

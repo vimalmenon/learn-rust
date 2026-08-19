@@ -24,9 +24,18 @@ fn immutability() {
 
 
 fn string() {
+    // This value is stored in readonly date on memory and not stack
+    // This string value cannot be changed
     let stack_value: &str = "This is String from stack";
     println!("Value is {}", stack_value);
 
+    // I can increase and decrease the size of string as it's in HEAP
     let heap_value: String = String::from("This is String heap");
     println!("Value is {}", heap_value);
+
+    // This demonstrated idea of mutability
+    let mut new_heap_value: String = String::from("This is String heap");
+    println!("Value is {}", new_heap_value);
+    new_heap_value.push_str(" : More Value");
+    println!("Value is {}", new_heap_value);
 }

@@ -2,8 +2,9 @@
 
 
 - [x] Basics of Rust
-    - [ ] Mutability
-    - [ ] String
+    - [x] Mutability
+    - [x] String
+    
 - [ ] If / else
 - [ ] Functions
 - [ ] Ownership and Reference

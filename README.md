@@ -1,6 +1,7 @@
 # Learn Rust
 
-- [ ] Basics of Rust
+
+- [x] Basics of Rust
 - [ ] If / else
 - [ ] Functions
 - [ ] Ownership and Reference
@@ -54,6 +55,23 @@
 - [ ] Trading App
 - [ ] BlockChain (Solana)
 
+
+
+### Basics of Rust
+CMD to build the project
+```
+cargo build
+```
+
+CMD to run the project
+```
+cargo run
+```
+
+CMD to release version
+```
+cargo run --release
+```
 
 
 ## Run Rust script

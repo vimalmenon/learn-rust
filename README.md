@@ -1,23 +1,7 @@
 # Learn Rust
 
 - [ ] Basics of Rust
-- [ ] If / else 
-- [ ] Loops
-- [ ] Iterator
-    - [ ] Loop through string
-    - [ ] Loop through items in loop
-- [ ] String
-    - [ ] Split a string
-- [ ] Folders / file
-    - [ ] Traversing the folder
-    - [ ] Creating a folder
-    - [ ] Deleting a folder
-    - [ ] Deleting a file
-    - [ ] Updating a file
-    - [ ] Creating file
-    - [ ] Reading the file
-    - [ ] Write to file
-    - [ ] Update the file
+- [ ] If / else
 - [ ] Functions
 - [ ] Ownership and Reference
 - [ ] Mutation
@@ -35,6 +19,22 @@
 - [ ] Macros
 - [ ] Async / Await / Futures
 - [ ] Sleep 
+- [ ] Loops
+- [ ] Iterator
+    - [ ] Loop through string
+    - [ ] Loop through items in loop
+- [ ] String
+    - [ ] Split a string
+- [ ] Folders / file
+    - [ ] Traversing the folder
+    - [ ] Creating a folder
+    - [ ] Deleting a folder
+    - [ ] Deleting a file
+    - [ ] Updating a file
+    - [ ] Creating file
+    - [ ] Reading the file
+    - [ ] Write to file
+    - [ ] Update the file
 - [ ] Traits
     - [ ] Copy, Clone, Debug
     - [ ] Difference between copy and clone

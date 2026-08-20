@@ -63,6 +63,9 @@
 - [ ] ISize()
 
 
+### Things to understand
+- referencing and dereferencing
+
 
 ### Basics of Rust
 CMD to build the project

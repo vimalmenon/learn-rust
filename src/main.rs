@@ -20,9 +20,51 @@ fn main() -> () {
         mutation_string();
         test_usize();
         mutable_condition();
+        reference_condition();
+        another_reference();
     }
+    
+    
 }
 
+fn another_reference() {
+    let mut w1 = String::from("First");
+    let mut w2 = &mut w1;
+
+    w2.push_str(" -> Second");
+
+
+    let w3 = &mut w2;
+
+    w3.push_str(" -> Third");
+
+    println!("{:p}", w3);
+
+    w2.push_str(" -> Second");
+    w1.push_str(" -> Second");
+
+    
+    // println!("{}", w2);
+    println!("{}", w1);
+}
+
+fn reference_condition() {
+
+    let value = String::from("testing");
+
+    println!("{}", value);
+
+    let value1 = &value;
+    println!("{:p}", value1);
+
+    let value2 = &value;
+    println!("{:p}", value2);
+
+    println!("{:p}", value2);
+    println!("{:p}", value1);
+    println!("{}", value)
+
+}
 
 fn mutable_condition() {
 
@@ -31,16 +73,24 @@ fn mutable_condition() {
     let mut value1 = &mut value;
     value1.push_str(" /n Added value 1");
     
-    let value2 =  &mut value1;
+    let mut value2 =  &mut value1;
     value2.push_str(" /n Added value 2");
 
-    println!("{}", value);
+    println!("{}", value2);
 
-    let value3 = &mut value;
+    let value3 = &mut value2;
     value3.push_str(" /n Added value 3");
 
-    println!("{}", value3);
+
+    println!("{:p}", value3);
+    println!("{:p}", value2);
+    println!("{:p}", value1);
+    
+    // println!("{:p}", value);
 }
+
+
+
 
 fn test_usize() {
     let value = String::from("value");

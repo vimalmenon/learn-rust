@@ -15,11 +15,26 @@ fn main() -> () {
         destructuring();
         stack_string();
         heap_string();
-        store_heap_int()
+        store_heap_int();
+        transfer_ownership();
+        mutation_string();
+        test_usize();    
     }
-    transfer_ownership()
+    
 }
 
+
+fn test_usize() {
+    let value = String::from("value");
+    let size: usize = value.len();
+    println!("This is Size {}", size);
+}
+
+fn mutation_string() {
+    let mut value = String::from("this is string");
+    value.push_str(" value");
+    println!("this is value {}", value);
+}
 
 fn transfer_ownership() {
     let value = String::from("testing");

@@ -4,10 +4,12 @@
 - [x] Basics of Rust
     - [x] Mutability
     - [x] String
-    
-- [ ] If / else
-- [ ] Functions
-- [ ] Ownership and Reference
+    - [x] Ownership
+    - [x] Box
+    - [x] If / else
+    - [x] Functions
+    - [x] Ownership and Reference
+
 - [ ] Mutation
 - [ ] Struts
 - [ ] Enums
@@ -57,6 +59,8 @@
 - [ ] Web Framework
 - [ ] Trading App
 - [ ] BlockChain (Solana)
+- [ ] USize(Unsigned size)
+- [ ] ISize()
 
 
 

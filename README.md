@@ -9,8 +9,8 @@
     - [x] If / else
     - [x] Functions
     - [x] Ownership and Reference
+    - [x] Mutation
 
-- [ ] Mutation
 - [ ] Struts
 - [ ] Enums
 - [ ] Implementation

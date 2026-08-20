@@ -18,11 +18,29 @@ fn main() -> () {
         store_heap_int();
         transfer_ownership();
         mutation_string();
-        test_usize();    
+        test_usize();
+        mutable_condition();
     }
-    
 }
 
+
+fn mutable_condition() {
+
+    let mut value = String::from("This is Value:");
+
+    let mut value1 = &mut value;
+    value1.push_str(" /n Added value 1");
+    
+    let value2 =  &mut value1;
+    value2.push_str(" /n Added value 2");
+
+    println!("{}", value);
+
+    let value3 = &mut value;
+    value3.push_str(" /n Added value 3");
+
+    println!("{}", value3);
+}
 
 fn test_usize() {
     let value = String::from("value");
@@ -34,6 +52,10 @@ fn mutation_string() {
     let mut value = String::from("this is string");
     value.push_str(" value");
     println!("this is value {}", value);
+
+    // let mut new_value = "value";
+    // new_value.push_str(" value");
+    // println!("this is value {}", new_value)
 }
 
 fn transfer_ownership() {

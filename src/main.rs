@@ -1,13 +1,33 @@
 
 fn main() -> () {
-    let _num: i64 = 563456000000;
-    println!("Max is {}  Min is {}", i64::MAX, i64::MIN);
     if false {
+        max_values();
         immutability();
         string();
         tuple();
-        destructuring();   
+        destructuring();
+        stack_string();
+        heap_string();
     }
+}
+
+
+fn stack_string() {
+    let string = "test";
+    let new_string = string;
+    println!("this is string {}", string);
+    println!("this is new_string {}", new_string);
+}
+
+fn heap_string() {
+    let string = String::from("This is Viaml Menon");
+    // here string is garbage collected
+    let new_string = string;
+    let stack_string: &str = &new_string;
+    // this fail because string memory has been reassigned
+    // println!("this is string {}", string);
+    println!("this is new_string {}", new_string);
+    println!("this is stack_string {}", stack_string);
 }
 
 fn destructuring() {
@@ -61,4 +81,18 @@ fn string() {
     println!("Value is {}", new_heap_value);
     new_heap_value.push_str(" : More Value");
     println!("Value is {}", new_heap_value);
+}
+
+fn max_values() {
+    println!("i8 : Min is {}  Max is {}", i8::MAX, i8::MIN);
+    println!("i8 : Min is {}  Max is {}", i16::MAX, i16::MIN);
+    println!("i8 : Min is {}  Max is {}", i32::MAX, i32::MIN);
+    println!("i8 : Min is {}  Max is {}", i64::MAX, i64::MIN);
+    println!("i8 : Min is {}  Max is {}", i128::MAX, i128::MIN);
+    println!("i8 : Min is {}  Max is {}", i128::MAX, i128::MIN);
+    println!("u8 : Min is {}  Max is {}", u8::MAX, u8::MIN);
+    println!("u16 : Min is {}  Max is {}", u16::MAX, u16::MIN);
+    println!("u32 : Min is {}  Max is {}", u32::MAX, u32::MIN);
+    println!("u64 : Min is {}  Max is {}", u64::MAX, u64::MIN);
+    println!("u128 : Min is {}  Max is {}", u128::MAX, u128::MIN);
 }

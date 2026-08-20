@@ -1,4 +1,10 @@
 
+// Main Feature
+// - Variable are immutable
+// - Value in Heap can only have one owner
+// - Value in Stack can only process
+
+
 fn main() -> () {
     if false {
         max_values();
@@ -26,6 +32,7 @@ fn heap_string() {
     let stack_string: &str = &new_string;
     // this fail because string memory has been reassigned
     // println!("this is string {}", string);
+    // cannot have double pointer
     println!("this is new_string {}", new_string);
     println!("this is stack_string {}", stack_string);
 }

@@ -80,6 +80,10 @@ CMD to release version
 cargo run --release
 ```
 
+CMD to clean cargo
+```
+cargo clean
+```
 
 
 ### Examples

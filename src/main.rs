@@ -3,6 +3,7 @@
 // - Variable are immutable
 // - Value in Heap can only have one owner
 // - Value in Stack can only process
+// - Heap ownership can be transferred to function
 
 
 fn main() -> () {
@@ -14,7 +15,26 @@ fn main() -> () {
         destructuring();
         stack_string();
         heap_string();
+        store_heap_int()
     }
+    transfer_ownership()
+}
+
+
+fn transfer_ownership() {
+    let value = String::from("testing");
+    string_transfer(value);
+    // This fails because ownership has been transferred
+    // println!("Use this again {}", value);
+}
+
+fn string_transfer(value: String) {
+    println!("Value transferred to this function {}", value)
+}
+
+fn store_heap_int() {
+    let heap_int = Box::new(42);
+    println!("this is heap int {}", heap_int);
 }
 
 

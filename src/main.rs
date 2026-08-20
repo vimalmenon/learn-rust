@@ -23,18 +23,53 @@ fn main() -> () {
         reference_condition();
         another_reference();
         array_check();
-        
+        vector_check();
+        update_string();
+
     }
-    vector_check();
+    check_type_of();
 }
 
+fn check_type_of() {
+    let x = 5;
+    let f = 5.5;
+    let s = String::from("test");
+    let s_s = "test";
+    let a = [1, 2, 3];
+    let suffixed_double = 10.0_f64;
+    let explicit_double: f64 = 5.99; 
+
+
+    println!("Type of x is {}", f64::MAX);
+
+    println!("Type of x is {}", std::any::type_name_of_val(&x));
+    println!("Type of f is {}", std::any::type_name_of_val(&f));
+    println!("Type of s is {}", std::any::type_name_of_val(&s));
+    println!("Type of s_s is {}", std::any::type_name_of_val(&s_s));
+    println!("Type of a is {}", std::any::type_name_of_val(&a));
+    println!("Type of suffixed_double is {}", std::any::type_name_of_val(&suffixed_double));
+    println!("Type of explicit_double is {}", std::any::type_name_of_val(&explicit_double));
+}
+
+fn update_string() {
+    let value = "Vimal Menon";
+    let mut new_vector: Vec<String> = Vec::new();
+    for c in value.chars() {
+        let char_value = c.to_string();
+        if char_value == " " {
+            continue;
+        }
+        println!("{}", c);
+        new_vector.push(char_value);
+    }
+    let result = new_vector.join("");
+    println!("This is value {}", result);
+}
 
 fn vector_check() {
     let mut value = vec![1,2,3];
     check_vector(&mut value);
     println!("This is value {:?}", value);
-
-
 }
 
 fn check_vector(value: &mut Vec<i32>) {
@@ -47,11 +82,8 @@ fn check_vector(value: &mut Vec<i32>) {
 
 
 fn array_check() {
-
     let mut value = [1,2,3];
-
     value[1] = 6;
-
     println!("{:?}", value);
 }
 

@@ -22,9 +22,37 @@ fn main() -> () {
         mutable_condition();
         reference_condition();
         another_reference();
+        array_check();
+        
     }
-    
-    
+    vector_check();
+}
+
+
+fn vector_check() {
+    let mut value = vec![1,2,3];
+    check_vector(&mut value);
+    println!("This is value {:?}", value);
+
+
+}
+
+fn check_vector(value: &mut Vec<i32>) {
+    println!("{:?}", value);
+    value.push(56);
+    value.iter().enumerate().for_each(|(index, value)| {
+        println!("Index {} Value {}", index, value);
+    });
+}
+
+
+fn array_check() {
+
+    let mut value = [1,2,3];
+
+    value[1] = 6;
+
+    println!("{:?}", value);
 }
 
 fn another_reference() {

@@ -1,7 +1,6 @@
 use std::{fs::File, io::Write};
 
-#[warn(unused)]
-#[warn(dead_code)]
+#[allow(unused, dead_code)]
 
 
 
@@ -14,6 +13,11 @@ fn main() -> () {
         },
         Err(e) => println!("Error creating file: {}", e),
     }
-}
 
+    let items = vec![1, 2, 3, 4, 5];
+
+    let doubled_items: Vec<i32> = items.iter().map(|x: &i32| x * 2).collect();
+    println!("{:?}", doubled_items);
+    println!("{:?}", items);
+}
 

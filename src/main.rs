@@ -6,28 +6,32 @@
 // - Heap ownership can be transferred to function
 
 
-fn main() -> () {
-    if false {
-        max_values();
-        immutability();
-        string();
-        tuple();
-        destructuring();
-        stack_string();
-        heap_string();
-        store_heap_int();
-        transfer_ownership();
-        mutation_string();
-        test_usize();
-        mutable_condition();
-        reference_condition();
-        another_reference();
-        array_check();
-        vector_check();
-        update_string();
 
+
+
+fn check_match() {
+    println!("This is match");
+}
+
+fn check_for_loop() {
+    let test = [1, 2,3,4,5];
+    for value in &test {
+        println!("This is value {}", value);
     }
-    check_type_of();
+}
+
+
+fn check_while_loop() {
+    let mut check = true;
+    let mut number = 0;
+    while check {
+        if number == 5 {
+            check = false;
+        } else {
+            println!("This is number {}", number);
+            number += 1;
+        }
+    }
 }
 
 fn check_type_of() {

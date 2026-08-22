@@ -1,6 +1,9 @@
-use std::{fs::File, io::Write};
-
 #[allow(unused, dead_code)]
+
+mod old_main;
+
+use std::{fs::File, io::Write};
+use old_main::test;
 
 struct Person {
     name: String,
@@ -45,5 +48,12 @@ fn main() -> () {
     let person = Person::new("Vimal Menon".to_string(), 25);
     person.get_name();
     person.get_age();
+
+    let mut value;
+
+    value = "another";
+    println!("This is value {}", value);
+    value = "another value";
+    println!("This is value {}", value);
 
 }

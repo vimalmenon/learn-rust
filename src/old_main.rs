@@ -6,7 +6,9 @@
 // - Heap ownership can be transferred to function
 
 
-
+pub fn test() {
+    println!("This is test function");
+}
 
 
 fn check_match() {

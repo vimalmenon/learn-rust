@@ -3,8 +3,8 @@
 mod old_main;
 
 use std::{fs::File, io::Write};
-use old_main::test;
 
+#[derive(Debug)]
 struct Person {
     name: String,
     age: u32,
@@ -29,6 +29,12 @@ impl PersonTrait for Person {
 }
 
 
+impl Person {
+    fn add_one_year(&mut self) {
+        self.age += 1;
+    }
+}
+
 fn main() -> () {
     let file = File::create("text.csv");
     match file {
@@ -45,15 +51,12 @@ fn main() -> () {
     println!("{:?}", doubled_items);
     println!("{:?}", items);
 
-    let person = Person::new("Vimal Menon".to_string(), 25);
+    let mut person = Person::new("Vimal Menon".to_string(), 25);
     person.get_name();
     person.get_age();
+    person.add_one_year();
 
-    let mut value;
 
-    value = "another";
-    println!("This is value {}", value);
-    value = "another value";
-    println!("This is value {}", value);
+    println!("person {:?}", person);
 
 }

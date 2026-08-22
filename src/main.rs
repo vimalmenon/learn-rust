@@ -2,7 +2,7 @@
 
 mod old_main;
 
-use std::{fs::File, io::Write};
+use std::{collections::HashMap, fs::File, io::Write};
 
 #[derive(Debug)]
 struct Person {
